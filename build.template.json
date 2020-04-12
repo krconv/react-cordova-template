@@ -1,0 +1,10 @@
+{
+  "ios": {
+    "debug": {
+      "codeSignIdentity": "iPhone Developer",
+      "developmentTeam": "XXXXXXXXXX",
+      "packageType": "development",
+      "automaticProvisioning": true
+    }
+  }
+}
