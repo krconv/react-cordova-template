@@ -37,11 +37,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `yarn run ios:setup`
+
+Adds the iOS platform for Cordova after building the project. This generates files that are ignored by Git, so it'll need to be run on any new system before being able to build the iOS app.
+
+Before setting up Cordova, Xcode will need to be configured to run the project. Check out the [Cordova documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html) for detailed instructions.
+
+### `yarn run ios:build`
+
+Builds the app for in preparation for deploying to an iOS device or simulator. The generated files will be placed in the `www` directory, which Cordova depends on.
+
+### `yarn run ios:deploy`
+
+Uses Cordova to run the app on the attached iOS device, or uses the simulator configured in Xcode if no device is attached.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn more about Apache Cordova, checkout the [Cordova documentation](https://cordova.apache.org/docs/en/latest/guide/overview/index.html).
 
 ### Code Splitting
 

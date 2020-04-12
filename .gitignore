@@ -10,6 +10,13 @@
 
 # production
 /build
+/www
+
+# cordova
+/hooks
+/platforms
+/plugins
+build.json
 
 # misc
 .DS_Store
